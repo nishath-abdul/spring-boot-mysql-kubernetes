@@ -1,9 +1,7 @@
 package com.abdul.example.entity;
 
-//import lombok.Data;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "userdetails")
@@ -12,7 +10,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
-    private Long userId;
+    private int userId;
     @Column(name = "user_name")
     private String userName;
 
@@ -20,15 +18,11 @@ public class User {
 
     }
 
-    public User(String userName, Long userId) {
-        this.userName = userName;
-        this.userId = userId;
-    }
-    public Long getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(Long userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -40,4 +34,11 @@ public class User {
         this.userName = userName;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                '}';
+    }
 }

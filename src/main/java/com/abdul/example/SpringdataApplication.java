@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class SpringdataApplication {
 
 	public static void main(String[] args) {
-		System.setProperty("server.servlet.context-path", "/abdul");
+		//System.setProperty("server.servlet.context-path", "/abdul");
 		SpringApplication.run(SpringdataApplication.class, args);
 	}
 
