@@ -1,3 +1,4 @@
+/*
 package com.abdul.example.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,3 +55,4 @@ public class OAuth2AuthServerConfiguration extends AuthorizationServerConfigurer
     }
 
 }
+*/

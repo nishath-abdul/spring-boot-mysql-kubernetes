@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("api/v1")
+@RequestMapping("/api/v1")
 public class DataController {
 
 	@Autowired
@@ -19,7 +19,7 @@ public class DataController {
 
 	@GetMapping("/test")
 	public String testEndpoint() {
-		return "Hello TEST working";
+		return "Hello TEST working :: updated code";
 	}
 
 	@GetMapping("/users")

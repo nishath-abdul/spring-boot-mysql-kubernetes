@@ -1,22 +1,6 @@
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    #url: jdbc:mysql://${DB_HOST}/${DB_NAME}?useSSL=false
-    url: jdbc:mysql://localhost:3306/users
-    username: root
-    password: admin0123
-    hikari:
-      initialization-fail-timeout: 0
-  jpa:
-    database-platform: org.hibernate.dialect.MySQL5Dialect
-    generate-ddl: true
-    show-sql: true
-    hibernate:
-      ddl-auto: create
-
 logging:
   level:
-      org.springframework.web: ERROR
+      org.springframework.web: TRACE
       com.hibernate.type: DEBUG
       org.hibernate.sql: DEBUG
       com.zaxxer.hikari.HikariConfig: DEBUG
